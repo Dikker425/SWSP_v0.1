@@ -9,10 +9,9 @@ headers = {
 }
 
 #v.02 - December 03, 2019
-#Check 123
-# так это чек ради чека
-#check
-
+# telegram: Dikker
+# email: dikkerd@ya.ru
+# https://github.com/Dikker425/SWSP_v0.1
 
 url = open('input.txt', 'r', encoding='utf-8').read().split('\n')
 print('================================')
