@@ -8,19 +8,19 @@ headers = {
     #'user-agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
 }
 
+#v.02 - %data%
+
 
 
 url = open('input.txt', 'r', encoding='utf-8').read().split('\n')
+print('================================')
+print(f'Reading input file... We have {len(url)} websites')
+print('Go Go Go!')
+print('================================')
 
 a = 0
 
-# Принты для провеки
-
-# print('Сайтов в списке: ', len(url))
-# print('-------------------')
-# print('Website' + '\t' + 'Country' + '\t' + 'Traffic,%' + '\t' + 'Traffic' + '\t' + 'Check' + '\n')
-
-my_file = open('output.txt', 'a')
+my_file = open('output.txt', 'w')
 my_file.write('Website' + '\t' + 'Country' + '\t' + 'Traffic,%' + '\t' + 'Traffic' + '\t' + 'Check' + '\n')
 
 session = requests.session()
@@ -139,8 +139,12 @@ for a in range(len(url)):
             url[a] + '\t' + 'ERROR' + '\t' + 'ERROR' + '\t' + 'ERROR' + '\n')
 
         my_file.write(data)
-        print('Parsed! :', url[a])
+        print('Parsed:', url[a])
     else:
-        print(f'Not Parsed, Check Manually : {url[a]} status_code: {request.status_code}')
+        print(f'Error : {url[a]} | Status Code: {request.status_code}')
         # print(request.text)
         # print(request.content)
+
+print('================================')
+print('Go to output.txt and see results')
+print('================================')
