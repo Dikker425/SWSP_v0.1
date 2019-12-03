@@ -8,7 +8,6 @@ How to use:
 2. run
 3. wait
 4. open output.txt and see results!
-5. Clean or delete output.txt after to prevent overwrite
 
 
 What stats:
