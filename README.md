@@ -1,7 +1,7 @@
 # SWSP_v0.1
 SW.SP - SimilarWeb.SimpleParser
 
-This thingy can parse some data from similarwe.com, no account needed, no need in selenium web driver.
+This thingy can parse some data from similarweb.com, no account needed, no need in selenium web driver.
 
 How to use:
 1. paste your websites - input.txt
