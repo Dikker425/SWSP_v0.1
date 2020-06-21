@@ -13,3 +13,7 @@ How to use:
 What stats:
 1. Total monthly visits
 2. Top5 Countries (and %) Output into simple .txt file that you can copy-paste into .xlsx with good looking format
+
+June,2020 Update:
+Not working - SimilarWeb made "robot" check better
+Need to solve problem with Captcha
